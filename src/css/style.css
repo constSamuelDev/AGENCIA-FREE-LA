@@ -1,0 +1,595 @@
+* {
+    font-family: "Roboto Mono", monospace;
+    font-style: italic;
+}
+
+body {
+    background-color: #ffeeee91;
+}
+
+.menu {
+    width: 100%;
+    background-color: #282c5f;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.topico {
+    text-decoration: none;
+    color: #fff;
+    padding: 40px;
+}
+
+.topico:hover {
+    color: #282c5f;
+    background-color: #fff;
+    transition: 0.7s ease;
+}
+
+.topico h3 {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: 10% 0 0 0;
+}
+
+.welcome .central h1,
+p {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.welcome .central p {
+    font-size: 30px;
+    width: 70%;
+    color: #4561ff;
+}
+
+.welcome .central h1 {
+    color: #000f64;
+    font-size: 90px;
+    margin: 0 0 6% 0;
+}
+
+.informacoes-iniciais {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+    text-align: center;
+    align-items: end;
+    margin-right: 50px;
+}
+
+.pergunta {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    color: #9c9494;
+    text-align: center;
+    margin: 10% 0 0 0;
+    height: fit-content;
+    width: 50%;
+    color: #000f64;
+}
+
+.pergunta:hover {
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    background-color: #000f64;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.resposta-config {
+    color: #4b57be;
+    display: none;
+    text-align: center;
+}
+
+.resposta-config p {
+    font-size: 25px;
+}
+
+.fundo-resposta {
+    background-color: #fcfeff;
+    width: 50%;
+    padding: 30px;
+    border-radius: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+
+.imagem-profissional {
+    height: 18rem;
+    border-radius: 5%;
+    margin: 0 0 30px;
+}
+
+.objetivo-empresa {
+    margin: 60px;
+    height: 100%;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ativo {
+    display: block;
+}
+
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6%;
+    height: 50vh;
+}
+
+.redes .social h1,
+p {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.redes .social {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    padding: 30px;
+    background-color: #e0dcff;
+    border-radius: 15px;
+}
+
+.redes .social button {
+    border-style: none;
+    background-color: #ffffff00;
+}
+
+
+.redes .social button:hover {
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    padding: 15px;
+}
+
+.redes .social h1 {
+    color: #05235c;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 0 0 0;
+    margin-right: 60px;
+}
+
+.perguntas-recorrentes .container {
+    color: #4561ff;
+    font-size: 60px;
+    text-align: center;
+    margin: 8% 0 0 0;
+    min-height: 100vh;
+}
+
+.sobre-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    gap: 30px;
+}
+
+.principal ul {
+    list-style-position: inside;
+    font-size: 30px;
+    color: #022e52;
+    margin-bottom: 6%;
+}
+
+.principal h1 {
+    color: #4561ff;
+    font-size: 90px;
+    margin: 0 0 2% 0;
+}
+
+.principal p {
+    font-size: 30px;
+    color: #022e52;
+}
+
+.registre {
+    padding: 40px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 30px;
+    background-color: #4b57be;
+    color: #fff;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.registre:hover {
+    cursor: pointer;
+    background-color: #7cd5ff;
+    color: #ffffff;
+    transition: all 0.4s ease-out;
+    font-size: 32px;
+}
+
+.central-login {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.central-login .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: url(../images/8642919.gif) center no-repeat;
+    background-size: cover;
+    padding: 45px;
+    border-radius: 15px;
+}
+
+.central-login .login h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.central-login .login button {
+    padding: 13px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border-style: none;
+    font-size: 20px;
+    color: #000f64;
+    margin-top: 20px;
+}
+
+.central-login .login button:hover {
+    cursor: pointer;
+    background-color: #00ff4c;
+    color: #ffffff;
+    transition: all 0.4s ease-out;
+}
+
+.central-login .login input {
+    border-style: none;
+    font-size: 22px;
+    border-radius: 7px;
+}
+
+.central-login .login h1,
+button {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+}
+
+.fundo {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container h3 {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+.container .vagas,
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px 0 0;
+    padding: 35px;
+    background-color: #308aff;
+    border-radius: 15px;
+}
+
+.container .vagas:hover {
+    cursor: pointer;
+    background-color: #000b69;
+    transition: 0.4s ease-in-out;
+}
+
+.container .chat:hover {
+    cursor: pointer;
+    background-color: #000b69;
+    transition: 0.4s ease-in-out;
+}
+
+.container .avatar img {
+    width: 75px;
+    height: 75px;
+}
+
+.pesquisa .avatar img {
+    width: 60px;
+}
+
+.pesquisa .avatar {
+    margin-left: 200px;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #000b69;
+    margin: 0;
+    padding: 10px;
+}
+
+.vagas-disponiveis {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    top: 25%;
+    left: 29%;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.vagas-disponiveis h1 {
+    padding: 12px;
+    background-color: #eafffc;
+    border-radius: 15px;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #01156e;
+    font-size: 15px;
+}
+
+.vagas-disponiveis p {
+    padding: 12px;
+    background-color: #eafffc;
+    border-radius: 15px;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: rgb(132, 130, 238);
+    font-size: 15px;
+}
+
+.vagas-disponiveis .preco {
+    color: #00ff4c;
+    background-color: rgb(255, 255, 255);
+}
+
+.vagas-disponiveis button {
+    padding: 20px;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #000282;
+    border-style: none;
+    font-size: 15px;
+}
+
+.vagas-disponiveis button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000282;
+    transition: 0.4s ease-in-out;
+}
+
+.vagas-disponiveis section {
+    height: 2%;
+    width: 500px;
+    padding: 23px;
+    background-color: #c4dcff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.vagas-disponiveis section img {
+    width: 30%;
+    border-radius: 15px;
+    background-color: #d4f1ff;
+    padding: 0 25% 0 25%;
+}
+
+#section-resultado {
+    display: none;
+}
+
+.pesquisa input {
+    font-size: 20px;
+    width: 50%;
+    border-radius: 15px;
+    border: 1px solid #022e52;
+    padding-right: 6px;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+}
+
+.pesquisa button {
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.pesquisa button img {
+    width: 30px;
+}
+
+.pesquisa button img:hover {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+.pesquisa .logo {
+    margin-right: 15%;
+}
+
+.perfil-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-perfil {
+    width: 40%;
+    background-color: #e0e0e0;
+    text-align: center;
+    border: 2px solid #c5caff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nome-user {
+    border: 2px solid #c5caff;
+    background-color: #f5fffd;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.sobre-user {
+    border: 2px solid #c5caff;
+    background-color: #f5fffd;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.container-perfil .nome-user h2 {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.avatar-perfil {
+    border: 2px solid #c5caff;
+    padding: 20px;
+    background-color: #f5fffd;
+    border-radius: 15px;
+    box-shadow: rgba(95, 95, 134, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(18px);
+    transform: translateX(-100%);
+    transition: all ease-out 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all ease-out 1s;
+}
+
+.hidden p {
+    filter: blur(18px);
+    transform: translateX(-100%);
+    transition: all ease-out 2s;
+}
+
+.show p {
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all ease-out 2s;
+}
+
+.redes .hidden .button1 {
+    filter: blur(18px);
+    transform: translateX(-100%);
+    transition: all ease-out 1s;
+}
+
+.redes .show .button1 {
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all ease-out 1s;
+}
+
+.redes .hidden .button2 {
+    filter: blur(18px);
+    transform: translateX(-100%);
+    transition: all ease-out 1.5s;
+}
+
+.redes .show .button2 {
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all ease-out 1.5s;
+}
+
+.redes .hidden .button3 {
+    filter: blur(18px);
+    transform: translateX(-100%);
+    transition: all ease-out 1.6s;
+}
+
+.redes .show .button3 {
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all ease-out 1.6s;
+}
